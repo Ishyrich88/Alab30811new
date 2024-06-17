@@ -18,3 +18,26 @@ function twoOddNumbers(n1, n2, n3, n4) {
 }
 
 console.log(twoOddNumbers(n1, n2, n3, n4));
+
+
+// Check if all numbers are divisible by 5
+const allDivisibleBy5 = [n1, n2, n3, n4].every(num => num % 5 === 0);
+console.log(`All numbers divisible by 5: ${allDivisibleBy5}`);
+
+// Check if the first number is larger than the last
+const firstLargerThanLast = n1 > n4;
+console.log(`First number larger than the last: ${firstLargerThanLast}`);
+
+// Arithmetic chain
+const arithmeticChainResult = ((n2 - n1) * n3) % n4;
+console.log(`Arithmetic chain result: ${arithmeticChainResult}`);
+
+// Change the way isOver25 calculates
+function isOver25(value) {
+    return value > 25;
+}
+
+// Example usage of isOver25
+const sum = n1 + n2 + n3 + n4;
+const over25 = isOver25(sum);
+console.log(`Sum is over 25: ${over25}`);
